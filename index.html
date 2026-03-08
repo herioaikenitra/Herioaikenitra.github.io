@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HERIO AI | Proyecto Premium</title>
+<style>
+body,h1,h2,h3,p,a,input,textarea,button{
+  margin:0; padding:0; box-sizing:border-box; font-family:Arial,sans-serif;
+}
+body{
+  background:#0a0a0a; color:white; text-align:center; line-height:1.6; overflow-x:hidden; position:relative;
+}
+header{ padding:60px 20px; background:#0a0a0a; }
+header h1{ font-size:42px; color:#E6C200; margin-bottom:10px; }
+header p{ font-size:20px; opacity:0.9; }
+.video{ max-width:900px; margin:auto; padding:20px 0; }
+.video iframe{ width:100%; height:56.25vw; max-height:450px; border-radius:10px; }
+.btn{ display:inline-block; margin:25px 5px; padding:15px 30px; background:#E6C200; color:#0a0a0a; text-decoration:none; border-radius:30px; font-weight:bold; transition:0.3s; }
+.btn:hover{ background:#FFD700; transform:scale(1.05); }
+.offer{ padding:60px 20px; background:#111; }
+.offer h2{ color:#E6C200; font-size:30px; }
+.offer h3{ margin-top:10px; color:#fff; font-size:25px; }
+.price{ font-size:40px; color:#E6C200; margin:10px 0; }
+.services{ display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px; padding:40px; max-width:1100px; margin:auto; }
+.card{ background:#111; padding:20px; border-radius:15px; transition:0.3s; }
+.card img{ width:100%; height:200px; object-fit:cover; border-radius:10px; margin-bottom:15px; transition:0.4s; }
+.card:hover{ transform:translateY(-10px); box-shadow:0 0 25px rgba(230,194,0,0.6); }
+.card:hover img{ transform:scale(1.05); }
+.card h3{ color:#E6C200; margin-bottom:10px; }
+.card p{ color:white; }
+.contact{ padding:60px 20px; max-width:600px; margin:auto; text-align:right; }
+.contact-form input, .contact-form textarea{ width:100%; padding:15px; margin:10px 0; border-radius:10px; border:none; background:#111; color:white; font-size:16px; }
+.contact-form textarea{ resize:none; }
+.contact-form .btn{ width:100%; padding:15px; margin-top:15px; background:#E6C200; color:#0a0a0a; font-weight:bold; border-radius:30px; border:none; cursor:pointer; transition:0.3s; }
+.contact-form .btn:hover{ background:#FFD700; }
+.testimonial{ padding:60px 20px; opacity:0.95; background:#111; overflow:hidden; position:relative; }
+.testimonial-container{ display:flex; width:300%; animation: slide 12s linear infinite; }
+.testimonial-card{ flex:0 0 33.3333%; padding:25px; text-align:center; border-radius:15px; box-shadow:0 0 15px rgba(230,194,0,0.4); background:#111; margin:0 10px; }
+.testimonial-card img{ width:80px; height:80px; border-radius:50%; margin-bottom:15px; object-fit:cover; border:2px solid #E6C200; }
+.stars{ color:#E6C200; font-size:18px; margin:10px 0; }
+@keyframes slide{ 0%{transform:translateX(0);} 33%{transform:translateX(-33.3333%);} 66%{transform:translateX(-66.6666%);} 100%{transform:translateX(0);} }
+.social{ margin:40px; display:flex; justify-content:center; gap:20px; }
+.social a img{ width:50px; height:50px; animation: pulse 2s infinite ease-in-out; }
+@keyframes pulse{ 0%{transform:scale(1);} 50%{transform:scale(1.2) rotate(10deg);} 100%{transform:scale(1);} }
+.scroll-top{ position:fixed; bottom:20px; left:20px; background:#E6C200; color:#0a0a0a; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; font-size:25px; box-shadow:0 0 10px rgba(0,0,0,0.5); transition:0.3s; display:none; }
+.scroll-top:hover{ background:#FFD700; transform:scale(1.1); }
+.whatsapp{ position:fixed; bottom:20px; right:20px; background:#25D366; color:white; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:30px; text-decoration:none; }
+
+/* Burbujas en toda la página */
+.bubble{ position:absolute; background: rgba(230,194,0,0.3); border-radius:50%; pointer-events:none; animation: floatUpDown linear infinite; }
+@keyframes floatUpDown{
+  0%{ transform: translateY(0) scale(1); opacity:0.7; }
+  50%{ transform: translateY(-50px) scale(1.1); opacity:1; }
+  100%{ transform: translateY(50px) scale(0.9); opacity:0.5; }
+}
+
+@media(max-width:768px){ .testimonial-container{ flex-direction:column; width:100%; animation:none; } .testimonial-card{ flex:0 0 100%; margin-bottom:20px; } }
+</style>
+</head>
+<body>
+
+<header>
+<h1>HERIO AI</h1>
+<p>مشروعك الرقمي جاهز في 4 ساعات في وسط المحل ديالك</p>
+</header>
+
+<div class="video">
+<iframe src="https://www.youtube.com/embed/YkEz_L9wdcc" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<section class="offer">
+<h2>HERIO AI</h2>
+<h3>مشروعك الرقمي جاهز في 4 ساعات 🚀</h3>
+<div class="price">1999 DH</div>
+<p>موقع إلكتروني احترافي + حملة إعلانية لمدة أسبوع + تحسين الظهور في Google</p>
+<a href="https://wa.me/34641905185" class="btn">اطلب مشروعك الآن</a>
+</section>
+
+<section class="services">
+<div class="card">
+<img src="https://i.imgur.com/9qzCZdb.jpg" alt="Diseño Web">
+<h3>تصميم المواقع</h3>
+<p>إنشاء مواقع احترافية لعملك.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" alt="Tienda Online">
+<h3>متاجر إلكترونية</h3>
+<p>أنشئ متجرك وابدأ البيع عبر الإنترنت.</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Campañas Ads">
+<h3>حملات إعلانية</h3>
+<p>إعلانات لجلب العملاء إلى عملك.</p>
+</div>
+</section>
+
+<section class="contact">
+<h2>اتصل بنا</h2>
+<form action="https://formsubmit.co/tu-email@correo.com" method="POST" class="contact-form">
+<input type="text" name="name" placeholder="اسمك" required>
+<input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+<textarea name="message" rows="5" placeholder="رسالتك" required></textarea>
+<button type="submit" class="btn">أرسل الرسالة</button>
+</form>
+</section>
+
+<section class="testimonial">
+<h2>آراء العملاء</h2>
+<div class="testimonial-container">
+<div class="testimonial-card">
+<img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg" alt="Ahmed">
+<p>"HERIO AI ساعدني في بناء موقعي وزيادة عملائي."</p>
+<div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+<strong>— Ahmed, Kenitra</strong>
+</div>
+<div class="testimonial-card">
+<img src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg" alt="Sara">
+<p>"تجربة احترافية وموقع جميل بالفعل!"</p>
+<div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+<strong>— Sara, Casablanca</strong>
+</div>
+<div class="testimonial-card">
+<img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg" alt="Youssef">
+<p>"الحملة الإعلانية حققت نتائج ممتازة."</p>
+<div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+<strong>— Youssef, Rabat</strong>
+</div>
+</div>
+</section>
+
+<div class="social">
+<a href="https://youtube.com/@herio-c5w" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube"></a>
+<a href="https://www.tiktok.com/@herioai" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok"></a>
+<a href="https://www.facebook.com/share/1DkEbmgnhC/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+</div>
+
+<a href="#" class="scroll-top" id="scrollTopBtn">⬆️</a>
+<a href="https://wa.me/34641905185" class="whatsapp">💬</a>
+
+<footer>© 2026 HERIO AI</footer>
+
+<script>
+// Scroll Top
+const scrollTopBtn=document.getElementById('scrollTopBtn');
+window.onscroll=function(){ if(document.body.scrollTop>200||document.documentElement.scrollTop>200){scrollTopBtn.style.display="flex";}else{scrollTopBtn.style.display="none";} };
+scrollTopBtn.addEventListener('click',e=>{ e.preventDefault(); window.scrollTo({top:0,behavior:'smooth'}); });
+
+// Burbujas por toda la página
+for(let i=0;i<50;i++){
+  const bubble=document.createElement('div');
+  bubble.classList.add('bubble');
+
+  const size=Math.random()*20+10;
+  bubble.style.width=size+'px';
+  bubble.style.height=size+'px';
+  bubble.style.left=Math.random()*100+'vw';
+  bubble.style.top=Math.random()*100+'vh';
+
+  const duration=Math.random()*10+10; // 10-20s
+  const delay=Math.random()*10;
+  bubble.style.animationDuration=duration+'s';
+  bubble.style.animationDelay=delay+'s';
+
+  document.body.appendChild(bubble);
+}
+</script>
+
+</body>
+</html>
